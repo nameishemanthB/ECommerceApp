@@ -6,7 +6,7 @@ import library.ExcelLibrary;
 import pages.HomePage;
 import pages.OrderPage;
 import pages.ProductPage;
-public class TC002 extends BaseTest 
+public class TC003 extends BaseTest 
 {
 	@DataProvider
 	public Object[][] getData()
@@ -16,7 +16,7 @@ public class TC002 extends BaseTest
 	
 	
 	@Test(dataProvider="getData")
-	public void addProductToCartFromExcel(String productId, String size, String color)
+	public void addProductToCartDuplicate(String productId, String size, String color)
 	{
 		productId=productId.substring(0, 1);
 		HomePage home = new HomePage(driver, webActionUtil);
