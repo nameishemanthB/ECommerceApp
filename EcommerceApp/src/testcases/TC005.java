@@ -22,7 +22,7 @@ public class TC003 extends BaseTest
 	{
 		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
-		home.clickOnDressesLink();
+		home.clickOnDressesLink();;
 		home.selectProduct(productId);
 		ProductPage productPage = home.clickMoreButton(productId);
 		productPage.clickPlusButton(3);
