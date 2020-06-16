@@ -2,7 +2,9 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import library.ExcelLibrary;
+import library.Generic;
 import pages.HomePage;
 import pages.OrderPage;
 import pages.ProductPage;
@@ -18,7 +20,7 @@ public class TC003 extends BaseTest
 	@Test(dataProvider="getData")
 	public void addProductToCartFromExcel(String productId, String size, String color)
 	{
-		productId=productId.substring(0, 1);
+		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
 		home.clickOnDressesLink();
 		home.selectProduct(productId);
