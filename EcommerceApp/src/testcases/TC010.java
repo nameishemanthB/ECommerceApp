@@ -8,7 +8,7 @@ import library.Generic;
 import pages.HomePage;
 import pages.OrderPage;
 import pages.ProductPage;
-public class TC009 extends BaseTest 
+public class TC010 extends BaseTest 
 {
 	@DataProvider
 	public Object[][] getData()
@@ -22,7 +22,7 @@ public class TC009 extends BaseTest
 	{
 		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
-		home.clickOnDressesLink();;;;
+		home.clickOnDressesLink();
 		home.selectProduct(productId);
 		ProductPage productPage = home.clickMoreButton(productId);
 		productPage.clickPlusButton(3);
