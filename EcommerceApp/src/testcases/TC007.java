@@ -25,8 +25,8 @@ public class TC003 extends BaseTest
 		home.clickOnDressesLink();
 		home.selectProduct(productId);
 		ProductPage productPage = home.clickMoreButton(productId);
-		productPage.clickPlusButton(4);
-		productPage.clickMinusButton(2);
+		productPage.clickPlusButton(3);
+		productPage.clickMinusButton(1);
 		productPage.selectSize(size);
 		productPage.selectColor(color);
 		productPage.clickOnAddToCart();
