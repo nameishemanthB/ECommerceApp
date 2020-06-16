@@ -8,7 +8,7 @@ import library.Generic;
 import pages.HomePage;
 import pages.OrderPage;
 import pages.ProductPage;
-public class TC003 extends BaseTest 
+public class TC006 extends BaseTest 
 {
 	@DataProvider
 	public Object[][] getData()
