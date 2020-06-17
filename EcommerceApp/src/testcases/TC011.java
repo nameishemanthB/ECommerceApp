@@ -1,3 +1,4 @@
+
 package testcases;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -22,11 +23,11 @@ public class TC003 extends BaseTest
 	{
 		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
-		home.clickOnDressesLink();;
+		home.clickOnDressesLink();;;;
 		home.selectProduct(productId);
 		ProductPage productPage = home.clickMoreButton(productId);
 		productPage.clickPlusButton(4);
-		productPage.clickMinusButton(1);
+		productPage.clickMinusButton(2);
 		productPage.selectSize(size);
 		productPage.selectColor(color);
 		productPage.clickOnAddToCart();
