@@ -1,4 +1,5 @@
 package library;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,7 +11,8 @@ public class WebActionUtil
 	public WebDriver driver;
 	long ETO;
 	public WebDriverWait wait;
-	
+	public Actions action ;
+	public JavascriptExecutor js;
 	public WebActionUtil(WebDriver driver, long ETO)
 	{
 		this.driver = driver;
@@ -40,7 +42,7 @@ public class WebActionUtil
 	
 	public void mouseHover(WebElement target)
 	{
-		Actions action = new Actions(driver);
+		action= new Actions(driver);
 		action.moveToElement(target).perform();
 	}
 	
@@ -49,7 +51,8 @@ public class WebActionUtil
 	 * 
 	 */
 	public void scrollToTop() {
-		
+		js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(document.body.scrollHeight,0)");
 	}
 	
 	/*
@@ -57,14 +60,16 @@ public class WebActionUtil
 	 * 
 	 */
 	public void scrollToEnd() {
-		
+		js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
 	
 	/*
 	 * Method should scroll to Element
 	 * 
 	 */
-	public void scrollToElement() {
-		
+	public void scrollToElement(WebElement target) {
+		 js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();",target);
 	}	
 }
