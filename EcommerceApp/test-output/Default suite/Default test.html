@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 13 17:02:00 IST 2020</td>
+<td>Started on:</td><td>Wed Jun 17 13:55:10 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35122 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71902 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC002.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC002<br>Parameters: nameishemanth@rediffmail.com, Testing@123</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+<td title='testcases.TC011.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC011<br>Parameters: [TestResult name=addProductToCartFromExcel status=FAILURE method=TC011.addProductToCartFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC011@396f6598] output={null}]</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -94,17 +94,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -114,25 +107,39 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace225135742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace225135742'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1311884268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1311884268'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -143,17 +150,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -163,325 +163,33 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC002<br>Parameters: nameishemanth@rediffmail.com, Testing@123</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1253245581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1253245581'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>3</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC002<br>Parameters: nameishemanth@rediffmail.com, Testing@123</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1939482946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1939482946'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>3</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC002<br>Parameters: nameishemanth@rediffmail.com, Testing@123</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2041507685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2041507685'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>3</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>0</td>
+<td>testcases.TC011@396f6598</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -491,30 +199,169 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC002.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC002</td>
+<td title='testcases.TC011.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC011</td>
 <td></td>
-<td>-1592047947</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>-1592382381</td>
+<td>testcases.TC011@396f6598</td></tr>
 <tr>
-<td title='testcases.TC002.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC002</td>
+<td title='testcases.TC011.loginToApp()'><b>loginToApp</b><br>Test class: testcases.TC011</td>
 <td></td>
-<td>-1592047947</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>-1592382381</td>
+<td>testcases.TC011@396f6598</td></tr>
 <tr>
-<td title='testcases.TC002.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC002</td>
+<td title='testcases.TC011.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC011</td>
 <td></td>
-<td>-1592047947</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>-1592382381</td>
+<td>testcases.TC011@396f6598</td></tr>
 <tr>
-<td title='testcases.TC002.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC002</td>
+<td title='testcases.TC011.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC011</td>
 <td></td>
-<td>-1592047947</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>-1592382381</td>
+<td>testcases.TC011@396f6598</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='testcases.TC002.logoutFromApp()'><b>logoutFromApp</b><br>Test class: testcases.TC002</td>
+<td title='testcases.TC011.addProductToCartFromExcel()'><b>addProductToCartFromExcel</b><br>Test class: testcases.TC011<br>Parameters: 5.0, L, Blue</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
+*** Element info: {Using=xpath, value=//ul[@class=&apos;product_list grid row&apos;]/li}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy15.iterator(Unknown Source)
+	at pages.HomePage.selectProduct(HomePage.java:82)
+	at testcases.TC011.addProductToCartFromExcel(TC011.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1865982601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865982601'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
+*** Element info: {Using=xpath, value=//ul[@class=&apos;product_list grid row&apos;]/li}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy15.iterator(Unknown Source)
+	at pages.HomePage.selectProduct(HomePage.java:82)
+	at testcases.TC011.addProductToCartFromExcel(TC011.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>testcases.TC011@396f6598</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC011.addProductToCartFromExcel()'><b>addProductToCartFromExcel</b><br>Test class: testcases.TC011<br>Parameters: 3.0, S, Orange</td>
 <td></td>
-<td>-1592047954</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>12</td>
+<td>testcases.TC011@396f6598</td></tr>
+<tr>
+<td title='testcases.TC011.addProductToCartFromExcel()'><b>addProductToCartFromExcel</b><br>Test class: testcases.TC011<br>Parameters: 4.0, M, Pink</td>
+<td></td>
+<td>12</td>
+<td>testcases.TC011@396f6598</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -524,15 +371,15 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC002.addProductToCart()'><b>addProductToCart</b><br>Test class: testcases.TC002</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+<td title='testcases.TC011.addProductToCartFromExcel()'><b>addProductToCartFromExcel</b><br>Test class: testcases.TC011</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -543,17 +390,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -563,25 +403,39 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace737296372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace737296372'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2081952435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2081952435'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -592,17 +446,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -612,29 +459,43 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>testcases.TC011@396f6598</td></tr>
 <tr>
-<td title='testcases.TC002.addProductToCart()'><b>addProductToCart</b><br>Test class: testcases.TC002</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+<td title='testcases.TC011.addProductToCartFromExcel()'><b>addProductToCartFromExcel</b><br>Test class: testcases.TC011</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -645,17 +506,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -665,25 +519,39 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace101670043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace101670043'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1996556848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996556848'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.116)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;VINAY&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\VINAYK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ba8406a62b617d26a1afec666b1e777
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -694,17 +562,10 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at library.GetPhoto.getPhoto(GetPhoto.java:16)
+	at testcases.BaseTest.logoutFromApp(BaseTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -714,325 +575,33 @@ Session ID: 0f3519c8992c9801339cdabb4984a5cf
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.addProductToCart()'><b>addProductToCart</b><br>Test class: testcases.TC002</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace887077752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace887077752'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.addProductToCart()'><b>addProductToCart</b><br>Test class: testcases.TC002</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace885115970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace885115970'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TC002@53f65459</td></tr>
-<tr>
-<td title='testcases.TC002.addProductToCart()'><b>addProductToCart</b><br>Test class: testcases.TC002</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace534375334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace534375334'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TYSS-SR-021&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SKILLR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f3519c8992c9801339cdabb4984a5cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at library.WebActionUtil.clickOnElement(WebActionUtil.java:25)
-	at pages.LoginPage.login(LoginPage.java:27)
-	at testcases.BaseTest.loginToApp(BaseTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TC002@53f65459</td></tr>
+<td>testcases.TC011@396f6598</td></tr>
 </table><p>
 </body>
 </html>
