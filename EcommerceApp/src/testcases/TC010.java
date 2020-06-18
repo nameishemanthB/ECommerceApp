@@ -10,14 +10,14 @@ import pages.OrderPage;
 import pages.ProductPage;
 public class TC003 extends BaseTest 
 {
-	@DataProvider
+	@DataProvider(name="testdata")
 	public Object[][] getData()
 	{
 		return ExcelLibrary.getExcelData(XL_PATH, "TC001");
 	}
 	
 	
-	@Test(dataProvider="getData")
+	@Test(dataProvider="testdata")
 	public void addProductToCartFromExcel(String productId, String size, String color)
 	{
 		productId=Generic.removeDecimal(productId);
