@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC002">
+      <class name="testcases.TC001">
         <methods>
           <include name="logoutFromApp"/>
           <include name="launchApp"/>
+          <include name="addProductToCart"/>
           <include name="closeApp"/>
           <include name="loginToApp"/>
-          <include name="addProductToCart"/>
         </methods>
-      </class> <!-- testcases.TC002 -->
+      </class> <!-- testcases.TC001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
