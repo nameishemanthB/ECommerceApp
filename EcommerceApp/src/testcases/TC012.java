@@ -10,14 +10,14 @@ import pages.OrderPage;
 import pages.ProductPage;
 public class TC003 extends BaseTest 
 {
-	@DataProvider
+	@DataProvider(name="testdata")
 	public Object[][] getData()
 	{
 		return ExcelLibrary.getExcelData(XL_PATH, "TC001");
 	}
 	
 	
-	@Test(dataProvider="getData")
+	@Test(dataProvider="testdata")
 	public void addProductToCartFromExcel(String productId, String size, String color)
 	{
 		productId=Generic.removeDecimal(productId);
@@ -25,8 +25,8 @@ public class TC003 extends BaseTest
 		home.clickOnDressesLink();;;;
 		home.selectProduct(productId);
 		ProductPage productPage = home.clickMoreButton(productId);
-		productPage.clickPlusButton(4);
-		productPage.clickMinusButton(2);
+		productPage.clickPlusButton(3);
+		productPage.clickMinusButton(1);
 		productPage.selectSize(size);
 		productPage.selectColor(color);
 		productPage.clickOnAddToCart();
