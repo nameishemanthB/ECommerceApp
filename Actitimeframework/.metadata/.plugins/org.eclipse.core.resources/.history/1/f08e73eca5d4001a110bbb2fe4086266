@@ -1,0 +1,5 @@
+package GenericLibrary;
+
+public interface IAutoConstants {
+
+}
