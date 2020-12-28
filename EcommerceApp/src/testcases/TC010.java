@@ -20,6 +20,7 @@ public class TC003 extends BaseTest
 	@Test(dataProvider="testdata")
 	public void addProductToCartFromExcel(String productId, String size, String color)
 	{
+		int a = 10;
 		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
 		home.clickOnDressesLink();;;;
