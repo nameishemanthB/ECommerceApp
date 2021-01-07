@@ -97,4 +97,18 @@ public class HomePage extends BasePage
 		webActionUtil.clickOnElement(moreButton);
 		return new ProductPage(driver, webActionUtil);
 	}
+	
+	public void scrollingToEnd()
+	{
+		webActionUtil.scrollToEnd();
+	}
+	public void scrollingToTop()
+	{
+		webActionUtil.scrollToTop();
+	}
+	public void scrollToTarget(WebElement target)
+	{
+		webActionUtil.scrollToElement(target);
+	}
+	
 }
